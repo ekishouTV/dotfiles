@@ -1,0 +1,9 @@
+[user]
+	name = ekishouTV
+	email = 45916397+ekishouTV@users.noreply.github.com
+[gpg]
+	format = ssh
+[commit]
+	gpgsign = true
+[filter "ignore-signingkey"]
+	clean = sed \"/\\tsigningkey/d\"
