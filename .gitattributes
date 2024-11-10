@@ -1,1 +1,2 @@
 .gitconfig filter=ignore-signingkey
+.config/tabby/config.yaml filter=ignore-tabby-background-image

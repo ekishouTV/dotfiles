@@ -7,3 +7,5 @@
 	gpgsign = true
 [filter "ignore-signingkey"]
 	clean = sed \"/\\tsigningkey/d\"
+[filter "ignore-tabby-background-image"]
+	clean = sed \"/\\sbackground-image/d\"

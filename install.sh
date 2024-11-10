@@ -11,3 +11,12 @@ for dotfile in $(ls $dotfiles_root -ap | grep -v '/' | grep '^\.' | grep -v '.gi
         fi
         ln -s "$dotfiles_root/$dotfile" $HOME
 done
+
+dotfiles_config="$dotfiles_root/.config"
+dot_config="$HOME/.config"
+
+tabby_config="$dot_config/tabby/config.yaml"
+if test -f $tabby_config && ! test -L $tabby_config; then
+    mv $tabby_config "$tabby_config.orig"
+fi
+ln -s "$dotfiles_config/tabby/config.yaml" "$dot_config/tabby"
