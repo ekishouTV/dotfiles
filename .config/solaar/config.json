@@ -1,0 +1,69 @@
+{
+  "406F:16770393": {
+    "_modelId": "B01D406F0000",
+    "_name": "MX Ergo Multi-Device Trackball ",
+    "_serial": "16770393",
+    "_unitId": "35AD2A7B",
+    "divert-keys": {
+      "237": 0,
+      "82": 0,
+      "83": 0,
+      "86": 0,
+      "91": 0,
+      "93": 0
+    },
+    "lowres-smooth-scroll": false,
+    "pointer_speed": 256,
+    "reprogrammable-keys": {
+      "237": 237,
+      "80": 80,
+      "81": 81,
+      "82": 82,
+      "83": 83,
+      "86": 86,
+      "91": 91,
+      "93": 93
+    },
+    "speed-change": 0
+  },
+  "408E:336EDEBC": {
+    "_modelId": "B35F408EC343",
+    "_name": "G915 TKL LIGHTSPEED Wireless RGB Mechanical Gaming Keyboard",
+    "_sensitive": {
+      "change-host": false,
+      "divert-gkeys": false,
+      "divert-keys": false
+    },
+    "_serial": "336EDEBC",
+    "_unitId": "336EDEBC",
+    "divert-gkeys": false,
+    "divert-keys": {
+      "209": 0,
+      "210": 0
+    }
+  },
+  "B020407BC08A:7B41E808": {
+    "_modelId": "B020407BC08A",
+    "_name": "MX Vertical Wireless Mouse",
+    "_unitId": "7B41E808",
+    "divert-keys": {
+      "253": 0,
+      "82": 0,
+      "83": 0,
+      "86": 0
+    },
+    "dpi": 1000,
+    "dpi-sliding": 0,
+    "lowres-smooth-scroll": false,
+    "mouse-gestures": 0,
+    "reprogrammable-keys": {
+      "253": 253,
+      "80": 80,
+      "81": 81,
+      "82": 82,
+      "83": 83,
+      "86": 86
+    }
+  },
+  "_version": "1.1.1"
+}

@@ -15,6 +15,15 @@ done
 dotfiles_config="$dotfiles_root/.config"
 dot_config="$HOME/.config"
 
+for app in $(ls $dotfiles_config -ap | grep '/' | grep -v '^\.'  | grep -v 'tabby')
+    do
+        app_config_path="$dot_config/$app"
+        if test -d $app_config_path && ! test -L $app_config_path; then
+            mv $app_config_path "$app_config_path.orig"
+        fi
+        ln -s "$dotfiles_config/$app" $dot_config
+done
+
 tabby_config="$dot_config/tabby/config.yaml"
 if test -f $tabby_config && ! test -L $tabby_config; then
     mv $tabby_config "$tabby_config.orig"

@@ -1,0 +1,63 @@
+- 1.1.13
+- _NAME: 'MX Ergo Multi-Device Trackball '
+  _absent: [hi-res-scroll, hires-smooth-invert, hires-smooth-resolution, hires-scroll-mode, scroll-ratchet, smart-shift, thumb-scroll-invert, thumb-scroll-mode,
+    onboard_profiles, report_rate, report_rate_extended, dpi, dpi_extended, backlight, backlight_level, backlight_duration_hands_out, backlight_duration_hands_in,
+    backlight_duration_powered, backlight-timed, led_control, led_zone_, rgb_control, rgb_zone_, brightness_control, per-key-lighting, fn-swap, disable-keyboard-keys,
+    crown-smooth, divert-crown, divert-gkeys, m-key-leds, mr-key-led, multiplatform, gesture2-gestures, gesture2-divert, gesture2-params, sidetone, equalizer,
+    adc_power_management]
+  _battery: 4096
+  _modelId: B01D406F0000
+  _sensitive: {hires-scroll-mode: ignore, hires-smooth-invert: ignore, hires-smooth-resolution: ignore}
+  _serial: '16770393'
+  _unitId: 35AD2A7B
+  _wpid: 406F
+  change-host: null
+  divert-keys: {82: 0, 83: 0, 86: 0, 91: 0, 93: 0, 237: 0}
+  lowres-scroll-mode: false
+  lowres-smooth-scroll: false
+  persistent-remappable-keys: null
+  pointer_speed: 256
+  reprogrammable-keys: {80: 80, 81: 81, 82: 82, 83: 83, 86: 86, 91: 91, 93: 93, 237: 237}
+  speed-change: 0
+- _NAME: G915 TKL LIGHTSPEED Wireless RGB Mechanical Gaming Keyboard
+  _absent: [hi-res-scroll, lowres-scroll-mode, hires-smooth-invert, hires-smooth-resolution, hires-scroll-mode, scroll-ratchet, smart-shift, thumb-scroll-invert,
+    thumb-scroll-mode, report_rate_extended, pointer_speed, dpi, dpi_extended, speed-change, backlight, backlight_level, backlight_duration_hands_out, backlight_duration_hands_in,
+    backlight_duration_powered, backlight-timed, led_control, led_zone_, fn-swap, reprogrammable-keys, persistent-remappable-keys, disable-keyboard-keys,
+    crown-smooth, divert-crown, multiplatform, gesture2-gestures, gesture2-divert, gesture2-params, sidetone, equalizer, adc_power_management]
+  _battery: 4097
+  _modelId: B35F408EC343
+  _sensitive: {brightness_control: true, change-host: false, divert-gkeys: false, divert-keys: false, onboard_profiles: false, per-key-lighting: true, rgb_control: true,
+    rgb_zone_2: true}
+  _serial: 336EDEBC
+  _unitId: 336EDEBC
+  _wpid: 408E
+  brightness_control: 12
+  change-host: null
+  divert-gkeys: false
+  divert-keys: {209: 0, 210: 0}
+  m-key-leds: {1: false, 2: false, 4: false}
+  mr-key-led: false
+  onboard_profiles: 1
+  per-key-lighting: {1: 16121850, 2: 10025880, 3: 10025880, 4: 10025880, 5: 10025880, 6: 10025880, 7: 10025880, 8: 10025880, 9: 10025880, 10: 10025880,
+    11: 10025880, 12: 10025880, 13: 16121850, 14: 10025880, 15: 10025880, 16: 10025880, 17: 10025880, 18: 10025880, 19: 16121850, 20: 10025880, 21: 10025880,
+    22: 10025880, 23: 10025880, 24: 10025880, 25: 16121850, 26: 10025880, 27: 10025880, 28: 10025880, 29: 10025880, 30: 10025880, 31: 10025880, 32: 10025880,
+    33: 10025880, 34: 10025880, 35: 10025880, 36: 10025880, 37: 10025880, 38: 10025880, 39: 10025880, 40: 10025880, 41: 10025880, 42: 10025880, 43: 10025880,
+    44: 10025880, 45: 10025880, 46: 10025880, 47: 10025880, 48: 10025880, 49: 10025880, 50: 10025880, 51: 10025880, 52: 10025880, 53: 10025880, 54: 10025880,
+    55: 10025880, 56: 10025880, 57: 10025880, 58: 10025880, 59: 10025880, 60: 10025880, 61: 10025880, 62: 10025880, 63: 10025880, 64: 10025880, 65: 10025880,
+    66: 10025880, 67: 10025880, 68: 10025880, 69: 10025880, 70: 10025880, 71: 10025880, 72: 10025880, 73: 10025880, 74: 10025880, 75: 10025880, 76: 10025880,
+    77: 10025880, 78: 10025880, 79: 10025880, 97: 10025880, 98: 10025880, 99: 10025880, 100: 10025880, 101: 10025880, 102: 10025880, 103: 10025880, 104: 10025880,
+    105: 10025880, 106: 10025880, 107: 10025880, 108: 10025880, 109: 10025880, 110: 10025880, 111: 10025880, 153: 10025880, 155: 10025880, 156: 10025880,
+    157: 10025880, 158: 10025880, 210: 10025880}
+  report_rate: 1
+  rgb_control: 1
+  rgb_zone_2: !LEDEffectSetting {ID: 0, color: 65535, intensity: 0, period: 100, ramp: 0, speed: 0}
+- _NAME: MX Vertical Wireless Mouse
+  _modelId: B020407BC08A
+  _sensitive: {hires-scroll-mode: ignore, hires-smooth-invert: ignore, hires-smooth-resolution: ignore}
+  _serial: 7B41E808
+  _unitId: 7B41E808
+  _wpid: B020407BC08A
+  divert-keys: {82: 0, 83: 0, 86: 0, 253: 0}
+  dpi: 1000
+  lowres-smooth-scroll: false
+  reprogrammable-keys: {80: 80, 81: 81, 82: 82, 83: 83, 86: 86, 253: 253}
