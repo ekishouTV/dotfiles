@@ -15,6 +15,7 @@ done
 dotfiles_config="$dotfiles_root/.config"
 dot_config="$HOME/.config"
 
+mkdir -p $dot_config
 for app in $(find $dotfiles_config -maxdepth 1 -mindepth 1 -exec basename {} \; | grep -E -v 'tabby')
     do
         app_config_path="$dot_config/$app"
