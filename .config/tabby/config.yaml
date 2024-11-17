@@ -175,27 +175,27 @@ hotkeys:
 terminal:
   searchOptions: {}
   colorScheme:
-    name: base2tone-drawbridge-dark
-    foreground: '#9094a7'
-    background: '#1b1f32'
-    cursor: '#289dbd'
+    name: Afterglow
+    foreground: '#d0d0d0'
+    background: '#212121'
+    cursor: '#d0d0d0'
     colors:
-      - '#1b1f32'
-      - '#627af4'
-      - '#67c9e4'
-      - '#99e9ff'
-      - '#7289fd'
-      - '#67c9e4'
-      - '#8b9efd'
-      - '#9094a7'
-      - '#51587b'
-      - '#75d5f0'
-      - '#252a41'
-      - '#444b6f'
-      - '#5e6587'
-      - '#c3cdfe'
-      - '#5cbcd6'
-      - '#e1e6ff'
+      - '#151515'
+      - '#ac4142'
+      - '#7e8e50'
+      - '#e5b567'
+      - '#6c99bb'
+      - '#9f4e85'
+      - '#7dd6cf'
+      - '#d0d0d0'
+      - '#505050'
+      - '#ac4142'
+      - '#7e8e50'
+      - '#e5b567'
+      - '#6c99bb'
+      - '#9f4e85'
+      - '#7dd6cf'
+      - '#f5f5f5'
   customColorSchemes: []
   lightColorScheme:
     name: Tabby Default Light
