@@ -30,3 +30,7 @@ if test -f $tabby_config && ! test -L $tabby_config; then
     mv $tabby_config "$tabby_config.orig"
 fi
 ln -s "$dotfiles_config/tabby/config.yaml" "$dot_config/tabby"
+
+# Install mise and install some tools via mise
+mise_bin=~/.local/bin/mise
+curl https://mise.run | sh && $mise_bin trust "$dot_config/mise/config.toml" && $mise_bin install -y

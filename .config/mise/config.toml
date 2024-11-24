@@ -1,0 +1,6 @@
+[tools]
+bat = "latest"
+eza = "latest"
+ghq = "latest"
+starship = "latest"
+usage = "latest"
