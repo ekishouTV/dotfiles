@@ -5,5 +5,13 @@ ghq = "latest"
 starship = "latest"
 usage = "latest"
 
+[tasks.recreate-docker-volume]
+run = """
+    volume={{arg(name='volume')}}
+    docker volume inspect $volume
+    docker volume rm $volume
+    docker volume create $volume
+"""
+
 [settings]
 idiomatic_version_file = false
