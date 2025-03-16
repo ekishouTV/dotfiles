@@ -4,3 +4,6 @@ eza = "latest"
 ghq = "latest"
 starship = "latest"
 usage = "latest"
+
+[settings]
+idiomatic_version_file = false
