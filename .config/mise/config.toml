@@ -13,5 +13,8 @@ run = """
     docker volume create $volume
 """
 
+[tasks.installs-last-update-time]
+run = "eza -l --time-style=full-iso --no-user --no-permissions ~/.local/share/mise/installs/"
+
 [settings]
 idiomatic_version_file = false
