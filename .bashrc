@@ -127,7 +127,7 @@ fi
 eval "$(~/.local/bin/mise activate bash)"
 
 ## Enable Starship
-eval "$(~/.local/share/mise/installs/starship/latest/bin/starship init bash)"
+eval "$(starship init bash)"
 
 # Completion
 bind '"\C-i": menu-complete'
