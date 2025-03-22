@@ -1,5 +1,9 @@
 source ~/.bashrc.orig
 
+# Load ble.sh settings
+[[ $- == *i* ]] &&
+  source "$HOME/.local/share/blesh/ble.sh" --noattach
+
 # ~/.profile is not read
 if [ -d "$HOME/.local/bin" ] ; then
   PATH="$HOME/.local/bin:$PATH"
@@ -17,8 +21,8 @@ bind '"\C-i": menu-complete'
 # Disable screen lock
 stty stop undef
 
-# Enable ble.sh
-source ~/apps/ble-0.4.0-devel3/ble.sh
-
 # Post start
 fastfetch
+
+# Enable ble.sh
+[[ ! ${BLE_VERSION-} ]] || ble-attach
