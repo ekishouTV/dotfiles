@@ -9,8 +9,7 @@ profiles:
     id: local:custom:pwsh:2c23ac7f-38d2-43e7-a8a5-f3640ac9667a
 groups: []
 hotkeys:
-  toggle-window:
-    - Ctrl-Space
+  toggle-window: []
   copy-current-path: []
   ctrl-c:
     - Ctrl-C
