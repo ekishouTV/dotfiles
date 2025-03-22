@@ -171,6 +171,11 @@ hotkeys:
     - Ctrl-Shift-E
   command-selector:
     - Ctrl-Shift-P
+  group-selectors: {}
+  scroll-page-up:
+    - Alt-PageUp
+  scroll-page-down:
+    - Alt-PageDown
 terminal:
   searchOptions: {}
   colorScheme:
