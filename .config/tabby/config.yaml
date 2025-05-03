@@ -179,28 +179,53 @@ hotkeys:
 terminal:
   searchOptions: {}
   colorScheme:
-    name: base2tone-desert-dark
-    foreground: '#ada594'
-    background: '#292724'
-    cursor: '#bc672f'
+    name: Catppuccin Mocha
+    foreground: '#cdd6f4'
+    background: '#1e1e2e'
+    selection: null
+    cursor: '#f5e0dc'
+    cursorAccent: null
     colors:
-      - '#292724'
-      - '#816f4b'
-      - '#ec9255'
-      - '#ffb380'
-      - '#957e50'
-      - '#ec9255'
-      - '#ac8e53'
-      - '#ada594'
-      - '#7e7767'
-      - '#f29d63'
-      - '#3d3a34'
-      - '#615c51'
-      - '#908774'
-      - '#ddcba6'
-      - '#e58748'
-      - '#f2ead9'
-  customColorSchemes: []
+      - '#45475a'
+      - '#f38ba8'
+      - '#a6e3a1'
+      - '#f9e2af'
+      - '#89b4fa'
+      - '#f5c2e7'
+      - '#94e2d5'
+      - '#bac2de'
+      - '#585b70'
+      - '#f38ba8'
+      - '#a6e3a1'
+      - '#f9e2af'
+      - '#89b4fa'
+      - '#f5c2e7'
+      - '#94e2d5'
+      - '#a6adc8'
+  customColorSchemes:
+    - name: Catppuccin Mocha
+      foreground: '#cdd6f4'
+      background: '#1e1e2e'
+      selection: null
+      cursor: '#f5e0dc'
+      cursorAccent: null
+      colors:
+        - '#45475a'
+        - '#f38ba8'
+        - '#a6e3a1'
+        - '#f9e2af'
+        - '#89b4fa'
+        - '#f5c2e7'
+        - '#94e2d5'
+        - '#bac2de'
+        - '#585b70'
+        - '#f38ba8'
+        - '#a6e3a1'
+        - '#f9e2af'
+        - '#89b4fa'
+        - '#f5c2e7'
+        - '#94e2d5'
+        - '#a6adc8'
   lightColorScheme:
     name: Tabby Default Light
     foreground: '#4d4d4c'
