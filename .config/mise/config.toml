@@ -1,6 +1,7 @@
 [tools]
 bat = "latest"
 eza = "latest"
+fastfetch = "latest"
 ghq = "latest"
 starship = "latest"
 usage = "latest"

@@ -38,8 +38,3 @@ curl https://mise.run | sh && $mise_bin trust "$dot_config/mise/config.toml" && 
 # Install ble.sh
 curl -L https://github.com/akinomyoga/ble.sh/releases/download/nightly/ble-nightly.tar.xz | tar -C /tmp/ -xJf - && \
 bash /tmp/ble-nightly/ble.sh --install ~/.local/share
-
-# Install Fastfetch
-url=$(curl -s https://api.github.com/repos/fastfetch-cli/fastfetch/releases/latest | grep 'https://.*linux-amd64.tar.gz' | tr -d '"' | sed -e 's/browser_download_url:\(\.*\)/\1/')
-curl -L $url | tar -C /tmp/ -xzf -
-mv /tmp/fastfetch-linux-amd64/usr/bin/fastfetch ~/.local/bin/
