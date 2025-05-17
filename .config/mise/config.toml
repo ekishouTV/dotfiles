@@ -1,5 +1,6 @@
 [tools]
 bat = "latest"
+dua = "latest"
 eza = "latest"
 fastfetch = "latest"
 ghq = "latest"
