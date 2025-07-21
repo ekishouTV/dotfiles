@@ -17,8 +17,23 @@ run = """
     docker volume create $volume
 """
 
-[tasks.installs-last-update-time]
-run = "eza -l --time-style=full-iso --no-user --no-permissions ~/.local/share/mise/installs/"
+[tasks.outdated-with-last-update-time]
+alias = "olut"
+run = '''
+    lastUpdateTime=$(
+        eza -l --time-style=full-iso --no-user --no-permissions ~/.local/share/mise/installs/ \
+        | fx -rs "map(x => /-\s(.*\+\d{4})\s(.*)/.exec(x).slice(-2).reverse())" \
+        | fx "Object.fromEntries" "{lastUpdateTime: x}"
+    )
+    echo $(mise outdated -J) $lastUpdateTime \
+    | fx -s "Object.assign({}, ...x)" \
+        "map(app => Object.assign({}, app, {'lastUpdateTime': x['lastUpdateTime'][app.name]}))" \
+        "filter(x => x.name !== undefined)" \
+        "values" \
+        "console.table(x, ['name', 'current', 'latest', 'lastUpdateTime'])" \
+    2>/dev/null
+'''
+quiet = true
 
 [settings]
 idiomatic_version_file = false
