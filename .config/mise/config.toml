@@ -4,6 +4,8 @@ dua = "latest"
 eza = "latest"
 fastfetch = "latest"
 ghq = "latest"
+node = "latest"
+"npm:fx" = "latest"
 starship = "latest"
 usage = "latest"
 
