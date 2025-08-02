@@ -27,8 +27,9 @@ run = '''
     )
     echo $(mise outdated -J) $lastUpdateTime \
     | fx -s "Object.assign({}, ...x)" \
-        "map(app => Object.assign({}, app, {'lastUpdateTime': x['lastUpdateTime'][app.name]}))" \
-        "filter(x => x.name !== undefined)" \
+        "map(app => app.name !== undefined \
+            ? Object.assign({}, app, {'lastUpdateTime': x['lastUpdateTime'][app.name.replace(':', '-')]}) : undefined)" \
+        "filter(x => x !== undefined)" \
         "values" \
         "console.table(x, ['name', 'current', 'latest', 'lastUpdateTime'])" \
     2>/dev/null
