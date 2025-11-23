@@ -26,13 +26,16 @@ run = '''
         | fx -rs "map(x => /-\s(.*\+\d{4})\s(.*)/.exec(x).slice(-2).reverse())" \
         | fx "Object.fromEntries" "{lastUpdateTime: x}"
     )
-    echo $(mise outdated -J) $lastUpdateTime \
+    apps=$(mise outdated -J | fx "values" "{'apps': x}")
+    echo $apps $lastUpdateTime \
     | fx -s "Object.assign({}, ...x)" \
-        "map(app => app.name !== undefined \
-            ? Object.assign({}, app, {'lastUpdateTime': x['lastUpdateTime'][app.name.replace(':', '-')]}) : undefined)" \
-        "filter(x => x !== undefined)" \
-        "values" \
-        "console.table(x, ['name', 'current', 'latest', 'lastUpdateTime'])" \
+        "x.apps.map(app => {
+          return {
+            name: app.name, current: app.current, latest: app.latest, lastUpdateTime: x['lastUpdateTime'][app.name.replace(':', '-')]
+          }
+        }
+        )" \
+        "console.table" \
     2>/dev/null
 '''
 quiet = true
