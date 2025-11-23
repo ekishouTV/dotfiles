@@ -1,6 +1,7 @@
 [tools]
 bat = "latest"
 dua = "latest"
+edit = "latest"
 eza = "latest"
 fastfetch = "latest"
 ghq = "latest"
