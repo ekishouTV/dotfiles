@@ -18,6 +18,25 @@ run = """
     docker volume create $volume
 """
 
+[tasks.backup-docker-volume]
+run = """
+    volume={{arg(name='volume')}}
+    path={{arg(name='path')}}
+    docker run --rm -v $volume:/$volume alpine \
+    sh -c "apk add --no-cache --quiet zstd && tar -cf - /$volume | zstd" > $path
+"""
+
+[tasks.restore-docker-volume]
+run = """
+    volume={{arg(name='volume')}}
+    path={{arg(name='path')}}
+    cat $path | docker run --rm -i -v $volume:/$volume alpine \
+    sh -c "apk add --no-cache --quiet zstd && zstd -dc | tar -x -C /tmp/ && mv /tmp/$volume/* /$volume"
+"""
+
+[tasks.remove-anonymous-volumes]
+run = "docker volume rm $(docker volume ls -q -f label=com.docker.volume.anonymous)"
+
 [tasks.outdated-with-last-update-time]
 alias = "olut"
 run = '''
