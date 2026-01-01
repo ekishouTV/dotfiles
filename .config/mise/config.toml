@@ -1,5 +1,6 @@
 [tools]
 bat = "latest"
+cspell = "latest"
 dua = "latest"
 edit = "latest"
 eza = "latest"
@@ -58,6 +59,13 @@ run = '''
     2>/dev/null
 '''
 quiet = true
+
+[tasks.spell]
+run = [
+    "git log --pretty=format:'%B' -n 1 | cspell --no-progress --no-summary stdin",
+    "git ls-tree -r HEAD --name-only | cspell --no-progress --no-summary stdin",
+    "cspell ** --no-progress --no-summary"
+]
 
 [settings]
 idiomatic_version_file = false
