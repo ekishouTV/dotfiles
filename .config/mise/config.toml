@@ -73,3 +73,5 @@ run = [
 
 [settings]
 idiomatic_version_file = false
+install_before = "7d"
+lockfile = true
