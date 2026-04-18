@@ -1,6 +1,7 @@
 [tools]
 bat = "latest"
 cspell = "latest"
+delta = "latest"
 dua = "latest"
 edit = "latest"
 eza = "latest"
