@@ -64,6 +64,59 @@ run = '''
 '''
 quiet = true
 
+[tasks.flatpak-outdated-with-last-update-time]
+alias = "fpolut"
+run = '''
+    lastUpdateTimes=$(
+        eza -l --time-style=full-iso -R -L 8 -D --no-user --no-permissions --absolute /var/lib/flatpak/ | grep stable \
+        | fx -rs \
+            "map((x) => {
+              const datatime = /-\s(.*\+\d{4})\s(.*)/.exec(x).slice(-2).at(0)
+              const id = /\/var\/lib\/flatpak\/(app|runtime)\/(.*)\/x86_64\/stable/
+                .exec(x)
+                .at(-1)
+
+              return [id, datatime]
+            })" \
+        | fx "Object.fromEntries" "{lastUpdateTimes: x}"
+    )
+    apps=$(
+        flatpak list --columns=application,version \
+        | fx -rs "map(x => x.split('\t'))" \
+        | fx \
+            "map((x) => {
+              const [id, version] = x
+
+              return [id, version]
+            })" \
+        | fx "Object.fromEntries" "{'apps': x}"
+    )
+    remotes=$(
+        flatpak remote-ls --updates --columns=name,application,version \
+        | fx -rs "map(x => x.split('\t'))" \
+        | fx \
+            "map((x) => {
+              const [name, id, version] = x
+
+              return { name, id, version }
+            })" \
+            "values" "{'remotes': x}"
+    )
+    echo $apps $remotes $lastUpdateTimes \
+    | fx -s "Object.assign({}, ...x)" \
+        "x.remotes.map((remote) => {
+          return {
+            name: remote.name,
+            current: x.apps[remote.id],
+            latest: remote.version,
+            lastUpdateTime: x.lastUpdateTimes[remote.id],
+          }
+        })" \
+        "console.table" \
+    2>/dev/null
+'''
+quiet = true
+
 [tasks.spell]
 run = [
     "git log --pretty=format:'%B' -n 1 | cspell --no-progress --no-summary stdin",
