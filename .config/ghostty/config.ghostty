@@ -1,0 +1,10 @@
+command = /usr/bin/zsh --login --interactive
+
+window-height = 27
+window-width = 110
+
+font-family = UDEV Gothic NFLG
+font-size = 14
+
+config-file = ?auto/theme.ghostty
+

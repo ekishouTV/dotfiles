@@ -9,3 +9,5 @@
 	clean = sed \"/\\tsigningkey/d\"
 [filter "ignore-tabby-background-image"]
 	clean = sed \"/\\sbackground-image/d\"
+[filter "ignore-ghostty-background-image"]
+	clean = sed \"/background-image/d\"

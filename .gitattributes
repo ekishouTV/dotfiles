@@ -1,2 +1,3 @@
 .gitconfig filter=ignore-signingkey
 .config/tabby/config.yaml filter=ignore-tabby-background-image
+.config/ghostty/config.ghostty filter=ignore-ghostty-background-image
