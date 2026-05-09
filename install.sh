@@ -33,7 +33,7 @@ ln -s "$dotfiles_config/tabby/config.yaml" "$dot_config/tabby"
 
 # Install mise and install some tools via mise
 mise_bin=~/.local/bin/mise
-curl https://mise.run | sh && $mise_bin trust "$dot_config/mise/config.toml" && $mise_bin install -y
+curl https://mise.run | MISE_VERSION=v2026.4.24 sh && $mise_bin trust "$dot_config/mise/config.toml" && $mise_bin install -y
 
 # Install ble.sh
 curl -L https://github.com/akinomyoga/ble.sh/releases/download/nightly/ble-nightly.tar.xz | tar -C /tmp/ -xJf - && \
