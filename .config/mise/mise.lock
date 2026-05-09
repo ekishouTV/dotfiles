@@ -233,11 +233,11 @@ version = "39.2.0"
 backend = "npm:fx"
 
 [[tools.starship]]
-version = "1.25.0"
+version = "1.25.1"
 backend = "ubi:starship/starship"
 
 [tools.starship."platforms.linux-x64-starship"]
-checksum = "blake3:3c1a9a96af9529f9b216bd33c565aacf101b8bd4b9c255f29a3465323e043d38"
+checksum = "blake3:036eda6085bb00ba9eaa4611feb3552f3d6284548be8ad4e94d25eff2a258bad"
 
 [[tools.usage]]
 version = "3.2.1"
