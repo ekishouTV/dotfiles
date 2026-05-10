@@ -11,3 +11,5 @@
 	clean = sed \"/\\sbackground-image/d\"
 [filter "ignore-ghostty-background-image"]
 	clean = sed \"/background-image/d\"
+[gpg "ssh"]
+	defaultKeyCommand = ssh-add -L
