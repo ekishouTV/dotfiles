@@ -11,7 +11,6 @@ ghq = "latest"
 lazygit = "latest"
 node = "latest"
 "npm:fx" = "latest"
-starship = "latest"
 usage = "latest"
 yazi = "latest"
 
@@ -128,3 +127,4 @@ run = [
 idiomatic_version_file = false
 install_before = "7d"
 lockfile = true
+all_compile = false
