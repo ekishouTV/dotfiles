@@ -1,0 +1,15 @@
+abi <abi/4.0>,
+
+include <tunables/global>
+
+profile nix-bitwarden-desktop /nix/store/*-bitwarden-desktop-*/**/* flags=(default_allow) {
+  userns,
+}
+
+profile nix-microsoft-edge /nix/store/*-microsoft-edge-*/**/* flags=(default_allow) {
+  userns,
+}
+
+profile nix-obsidian /nix/store/*-obsidian-*/**/* flags=(default_allow) {
+  userns,
+}

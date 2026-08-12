@@ -9,8 +9,9 @@ in
 
 {
   imports = [
-    ../modules/bash.nix
+    ../modules/bitwarden.nix
     ../modules/mise.nix
+    ../modules/ghostty.nix
     ../modules/obsidian.nix
     ../modules/starship.nix
     ../modules/zed.nix
@@ -32,8 +33,6 @@ in
     };
 
     packages = with pkgs; [
-      bitwarden-desktop
-      ghostty
       numix-icon-theme-circle
       microsoft-edge
     ];
