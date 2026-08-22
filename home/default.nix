@@ -35,6 +35,7 @@ in
     packages = with pkgs; [
       numix-icon-theme-circle
       microsoft-edge
+      wl-clipboard
     ];
   };
 
