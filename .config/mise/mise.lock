@@ -5,7 +5,7 @@ version = "0.26.1"
 backend = "ubi:sharkdp/bat"
 
 [[tools.cspell]]
-version = "10.0.1"
+version = "10.1.1"
 backend = "npm:cspell"
 
 [[tools.delta]]
@@ -42,49 +42,49 @@ url = "https://github.com/dandavison/delta/releases/download/0.19.2/delta-0.19.2
 url_api = "https://api.github.com/repos/dandavison/delta/releases/assets/383663165"
 
 [[tools.dua]]
-version = "2.42.1"
+version = "2.43.0"
 backend = "aqua:Byron/dua-cli"
 
 [tools.dua."platforms.linux-arm64"]
-checksum = "sha256:3b68248d4b6c4b05042f1ba7579502cc6a62fbe903be3871b54f3fd99fd5c98d"
-url = "https://github.com/Byron/dua-cli/releases/download/v2.42.1/dua-v2.42.1-aarch64-unknown-linux-musl.tar.gz"
-url_api = "https://api.github.com/repos/Byron/dua-cli/releases/assets/515321877"
+checksum = "sha256:c8421bc6a272ec7bbcc85368e969e61348c24e1d0496d513d05dd1e7730e5cc9"
+url = "https://github.com/Byron/dua-cli/releases/download/v2.43.0/dua-v2.43.0-aarch64-unknown-linux-musl.tar.gz"
+url_api = "https://api.github.com/repos/Byron/dua-cli/releases/assets/529257656"
 provenance = "github-attestations"
 
 [tools.dua."platforms.linux-arm64-musl"]
-checksum = "sha256:3b68248d4b6c4b05042f1ba7579502cc6a62fbe903be3871b54f3fd99fd5c98d"
-url = "https://github.com/Byron/dua-cli/releases/download/v2.42.1/dua-v2.42.1-aarch64-unknown-linux-musl.tar.gz"
-url_api = "https://api.github.com/repos/Byron/dua-cli/releases/assets/515321877"
+checksum = "sha256:c8421bc6a272ec7bbcc85368e969e61348c24e1d0496d513d05dd1e7730e5cc9"
+url = "https://github.com/Byron/dua-cli/releases/download/v2.43.0/dua-v2.43.0-aarch64-unknown-linux-musl.tar.gz"
+url_api = "https://api.github.com/repos/Byron/dua-cli/releases/assets/529257656"
 provenance = "github-attestations"
 
 [tools.dua."platforms.linux-x64"]
-checksum = "sha256:897e1f394c696c5be81670f95fb457c89ee35e898aa3100f95b7abf1563bf329"
-url = "https://github.com/Byron/dua-cli/releases/download/v2.42.1/dua-v2.42.1-x86_64-unknown-linux-musl.tar.gz"
-url_api = "https://api.github.com/repos/Byron/dua-cli/releases/assets/515321819"
+checksum = "sha256:ee1519c6d2dff1f641ec4138d9ce05d5ed869fc4d2591252836f85a8258f9425"
+url = "https://github.com/Byron/dua-cli/releases/download/v2.43.0/dua-v2.43.0-x86_64-unknown-linux-musl.tar.gz"
+url_api = "https://api.github.com/repos/Byron/dua-cli/releases/assets/529257338"
 provenance = "github-attestations"
 
 [tools.dua."platforms.linux-x64-musl"]
-checksum = "sha256:897e1f394c696c5be81670f95fb457c89ee35e898aa3100f95b7abf1563bf329"
-url = "https://github.com/Byron/dua-cli/releases/download/v2.42.1/dua-v2.42.1-x86_64-unknown-linux-musl.tar.gz"
-url_api = "https://api.github.com/repos/Byron/dua-cli/releases/assets/515321819"
+checksum = "sha256:ee1519c6d2dff1f641ec4138d9ce05d5ed869fc4d2591252836f85a8258f9425"
+url = "https://github.com/Byron/dua-cli/releases/download/v2.43.0/dua-v2.43.0-x86_64-unknown-linux-musl.tar.gz"
+url_api = "https://api.github.com/repos/Byron/dua-cli/releases/assets/529257338"
 provenance = "github-attestations"
 
 [tools.dua."platforms.macos-arm64"]
-checksum = "sha256:7568c5960074f4250781fcddd1d8bac0178b3cf2cf22f76377dcc63121bf7e81"
-url = "https://github.com/Byron/dua-cli/releases/download/v2.42.1/dua-v2.42.1-x86_64-apple-darwin.tar.gz"
-url_api = "https://api.github.com/repos/Byron/dua-cli/releases/assets/515321170"
+checksum = "sha256:6857feca7273d7ef6b6535b88e1cf1a2c0cc1d853c3d915d777b60915955ae17"
+url = "https://github.com/Byron/dua-cli/releases/download/v2.43.0/dua-v2.43.0-x86_64-apple-darwin.tar.gz"
+url_api = "https://api.github.com/repos/Byron/dua-cli/releases/assets/529257700"
 provenance = "github-attestations"
 
 [tools.dua."platforms.macos-x64"]
-checksum = "sha256:7568c5960074f4250781fcddd1d8bac0178b3cf2cf22f76377dcc63121bf7e81"
-url = "https://github.com/Byron/dua-cli/releases/download/v2.42.1/dua-v2.42.1-x86_64-apple-darwin.tar.gz"
-url_api = "https://api.github.com/repos/Byron/dua-cli/releases/assets/515321170"
+checksum = "sha256:6857feca7273d7ef6b6535b88e1cf1a2c0cc1d853c3d915d777b60915955ae17"
+url = "https://github.com/Byron/dua-cli/releases/download/v2.43.0/dua-v2.43.0-x86_64-apple-darwin.tar.gz"
+url_api = "https://api.github.com/repos/Byron/dua-cli/releases/assets/529257700"
 provenance = "github-attestations"
 
 [tools.dua."platforms.windows-x64"]
-checksum = "sha256:6e81d82dee23e45fb7e93b61c94ad827e5805cd4e6169882298eab4d07b0330d"
-url = "https://github.com/Byron/dua-cli/releases/download/v2.42.1/dua-v2.42.1-x86_64-pc-windows-msvc.zip"
-url_api = "https://api.github.com/repos/Byron/dua-cli/releases/assets/515322841"
+checksum = "sha256:e5076331a387bde610735ef4c352350ff1811b75fa37f4920a84b9199fb369d4"
+url = "https://github.com/Byron/dua-cli/releases/download/v2.43.0/dua-v2.43.0-x86_64-pc-windows-msvc.zip"
+url_api = "https://api.github.com/repos/Byron/dua-cli/releases/assets/529259156"
 provenance = "github-attestations"
 
 [[tools.edit]]
@@ -233,47 +233,47 @@ url = "https://github.com/jesseduffield/lazygit/releases/download/v0.64.1/lazygi
 url_api = "https://api.github.com/repos/jesseduffield/lazygit/releases/assets/511894165"
 
 [[tools.node]]
-version = "26.7.0"
+version = "26.8.1"
 backend = "core:node"
 
 [tools.node."platforms.linux-arm64"]
-checksum = "sha256:925aa6157dd37542d0d7f2e28b7bf61e7b39284411210b0498bc3788db4aef68"
-url = "https://nodejs.org/dist/v26.7.0/node-v26.7.0-linux-arm64.tar.gz"
+checksum = "sha256:d5f973ce975e4bd03e6c2038260f7e9201615aa8e1ee293c72f8dcc2a6d9fddb"
+url = "https://nodejs.org/dist/v26.8.1/node-v26.8.1-linux-arm64.tar.gz"
 
 [tools.node."platforms.linux-arm64-musl"]
-checksum = "sha256:1f16cc0f6febcb1bed1d4550306806dbcfbaf5c1bc2f44f3c5c8b5d22a4cc27a"
-url = "https://unofficial-builds.nodejs.org/download/release/v26.7.0/node-v26.7.0-linux-arm64-musl.tar.gz"
+checksum = "sha256:0fe78afdeb4a4d273b14abbd4b946c772885c58994c9d23b1c8ae0a59a2f8a53"
+url = "https://unofficial-builds.nodejs.org/download/release/v26.8.1/node-v26.8.1-linux-arm64-musl.tar.gz"
 
 [tools.node."platforms.linux-x64"]
-checksum = "sha256:bd6b6c31e377bad9ad579bed72e5bc11f4c879ac9452ad51d30e646ea3d828df"
-url = "https://nodejs.org/dist/v26.7.0/node-v26.7.0-linux-x64.tar.gz"
+checksum = "sha256:b2b76660fa4ded4e0b2a41ee3c0c651cd52ea8170ead91ebac1e147ac3d55643"
+url = "https://nodejs.org/dist/v26.8.1/node-v26.8.1-linux-x64.tar.gz"
 
 [tools.node."platforms.linux-x64-musl"]
-checksum = "sha256:5dc0180e7684ede6fc9d9e6333da45686f4b5a7820729d33c68335b283337295"
-url = "https://unofficial-builds.nodejs.org/download/release/v26.7.0/node-v26.7.0-linux-x64-musl.tar.gz"
+checksum = "sha256:13135a6a2106f9d111fa9b48c8801ed119ad43e7e1d00de17d77a9c44899aada"
+url = "https://unofficial-builds.nodejs.org/download/release/v26.8.1/node-v26.8.1-linux-x64-musl.tar.gz"
 
 [tools.node."platforms.macos-arm64"]
-checksum = "sha256:7ee659a7768e641bbfd5360940660b8e8fd0052f77488f365562bac522fc15d4"
-url = "https://nodejs.org/dist/v26.7.0/node-v26.7.0-darwin-arm64.tar.gz"
+checksum = "sha256:6e577fd0d9db776db82306629e441a9dace416702622aebdd171c9dfaa41f4d2"
+url = "https://nodejs.org/dist/v26.8.1/node-v26.8.1-darwin-arm64.tar.gz"
 
 [tools.node."platforms.macos-x64"]
-checksum = "sha256:f279d1ed28ce57f7788bf23435d2ad7fdd7438904ad5c4d8a1081a7cde3d4b96"
-url = "https://nodejs.org/dist/v26.7.0/node-v26.7.0-darwin-x64.tar.gz"
+checksum = "sha256:fe9c6dbf9c8e1b4443803d75e2a20366e420dae650c747dbb116b22975751baf"
+url = "https://nodejs.org/dist/v26.8.1/node-v26.8.1-darwin-x64.tar.gz"
 
 [tools.node."platforms.windows-x64"]
-checksum = "sha256:d3bd72755141ed32bbcd841228ee81897c8a98d50dfa7dae2179399a0a7c90f8"
-url = "https://nodejs.org/dist/v26.7.0/node-v26.7.0-win-x64.zip"
+checksum = "sha256:57693d8e93d1b04e7b7de46aca53ecd63e97564e73de36a68428d7ff08d83587"
+url = "https://nodejs.org/dist/v26.8.1/node-v26.8.1-win-x64.zip"
 
 [[tools."npm:fx"]]
 version = "39.2.0"
 backend = "npm:fx"
 
 [[tools.usage]]
-version = "5.1.0"
+version = "6.5.0"
 backend = "ubi:jdx/usage"
 
 [tools.usage."platforms.linux-x64-usage"]
-checksum = "blake3:ab91cda8347d09129effa1d9ec04b1486547b0fcf4087f12c21cde96f3a06037"
+checksum = "blake3:d0ed98d875b72227e65afb29e19b68dff244c24c76c40ca9b2106a62b4d308f3"
 
 [[tools.yazi]]
 version = "26.8.15"
