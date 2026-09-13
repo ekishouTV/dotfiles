@@ -124,6 +124,6 @@ run = [
 
 [settings]
 idiomatic_version_file = false
-install_before = "7d"
+minimum_release_age = "7d"
 lockfile = true
 all_compile = false
