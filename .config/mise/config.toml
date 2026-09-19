@@ -44,8 +44,16 @@ run = "docker volume rm $(docker volume ls -q -f label=com.docker.volume.anonymo
 alias = "olut"
 run = '''
     lastUpdateTime=$(
-        eza -l --time-style=full-iso --no-user --no-permissions ~/.local/share/mise/installs/ \
-        | fx -rs "map(x => /-\s(.*\+\d{4})\s(.*)/.exec(x).slice(-2).reverse())" \
+        eza -l --time-style=full-iso -R -L 9 --no-user --no-permissions --absolute=on ~/.local/share/mise/installs/ | grep latest \
+        | fx -rs \
+            "map((x) => {
+              const datatime = /-\s(.*\+\d{4})\s(.*)/.exec(x).slice(-2).at(0)
+              const app = /installs\/(.*)\/latest/
+                .exec(x)
+                .at(-1)
+
+              return [app, datatime]
+            })" \
         | fx "Object.fromEntries" "{lastUpdateTime: x}"
     )
     apps=$(mise outdated -J | fx "values" "{'apps': x}")
