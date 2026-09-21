@@ -74,7 +74,7 @@ quiet = true
 alias = "fpolut"
 run = '''
     lastUpdateTimes=$(
-        eza -l --time-style=full-iso -R -L 8 -D --no-user --no-permissions --absolute /var/lib/flatpak/ | grep stable \
+        eza -l --time-style=full-iso -R -L 8 -D --no-user --no-permissions --absolute=on /var/lib/flatpak/ | grep stable \
         | fx -rs \
             "map((x) => {
               const datatime = /-\s(.*\+\d{4})\s(.*)/.exec(x).slice(-2).at(0)
