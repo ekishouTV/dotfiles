@@ -189,6 +189,45 @@ checksum = "sha256:aba011c1c45d1a6bdcf52098dd0b9afe990fe444180bc491e87f36670f145
 url = "https://github.com/fastfetch-cli/fastfetch/releases/download/2.69.0/fastfetch-windows-amd64.zip"
 url_api = "https://api.github.com/repos/fastfetch-cli/fastfetch/releases/assets/588202599"
 
+[[tools.fx]]
+version = "39.2.0"
+backend = "aqua:antonmedv/fx"
+
+[tools.fx."platforms.linux-arm64"]
+checksum = "sha256:85ea8435b0a80b6d31ffa9f61ac9b67d9bb8f0ffffabdfe5e7e587b07a0a0684"
+url = "https://github.com/antonmedv/fx/releases/download/39.2.0/fx_linux_arm64"
+url_api = "https://api.github.com/repos/antonmedv/fx/releases/assets/315468985"
+
+[tools.fx."platforms.linux-arm64-musl"]
+checksum = "sha256:85ea8435b0a80b6d31ffa9f61ac9b67d9bb8f0ffffabdfe5e7e587b07a0a0684"
+url = "https://github.com/antonmedv/fx/releases/download/39.2.0/fx_linux_arm64"
+url_api = "https://api.github.com/repos/antonmedv/fx/releases/assets/315468985"
+
+[tools.fx."platforms.linux-x64"]
+checksum = "sha256:17ea6549c7cf0b8be5ec109d04da7fbf1d5de9f7b99d957a6215081933528afe"
+url = "https://github.com/antonmedv/fx/releases/download/39.2.0/fx_linux_amd64"
+url_api = "https://api.github.com/repos/antonmedv/fx/releases/assets/315468989"
+
+[tools.fx."platforms.linux-x64-musl"]
+checksum = "sha256:17ea6549c7cf0b8be5ec109d04da7fbf1d5de9f7b99d957a6215081933528afe"
+url = "https://github.com/antonmedv/fx/releases/download/39.2.0/fx_linux_amd64"
+url_api = "https://api.github.com/repos/antonmedv/fx/releases/assets/315468989"
+
+[tools.fx."platforms.macos-arm64"]
+checksum = "sha256:5d7dadbf8ac4e4a55b5b6d31bdd958b90823292997ba9ddae395f66417bb4a9b"
+url = "https://github.com/antonmedv/fx/releases/download/39.2.0/fx_darwin_arm64"
+url_api = "https://api.github.com/repos/antonmedv/fx/releases/assets/315468988"
+
+[tools.fx."platforms.macos-x64"]
+checksum = "sha256:2ad7d0a6e1ea67ab10a22cc06825fdc776511e8f412926d1c752b630eac12e02"
+url = "https://github.com/antonmedv/fx/releases/download/39.2.0/fx_darwin_amd64"
+url_api = "https://api.github.com/repos/antonmedv/fx/releases/assets/315468986"
+
+[tools.fx."platforms.windows-x64"]
+checksum = "sha256:00fbddd7bd67f747a51aecc0a5bafcc695a21dfae7b912684510722c8e2d6d22"
+url = "https://github.com/antonmedv/fx/releases/download/39.2.0/fx_windows_amd64.exe"
+url_api = "https://api.github.com/repos/antonmedv/fx/releases/assets/315468991"
+
 [[tools.ghq]]
 version = "1.10.1"
 backend = "aqua:x-motemen/ghq"
@@ -298,10 +337,6 @@ url = "https://nodejs.org/dist/v26.10.0/node-v26.10.0-darwin-x64.tar.gz"
 [tools.node."platforms.windows-x64"]
 checksum = "sha256:9fef7eca6743a6b910989cd8e78712376b394fcb9b6e1e9c44a0799a287f90c5"
 url = "https://nodejs.org/dist/v26.10.0/node-v26.10.0-win-x64.zip"
-
-[[tools."npm:fx"]]
-version = "39.2.0"
-backend = "npm:fx"
 
 [[tools.usage]]
 version = "6.11.1"
