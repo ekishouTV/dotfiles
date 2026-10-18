@@ -41,7 +41,7 @@
           "firefox_firefox.desktop"
           "org.gnome.Nautilus.desktop"
           "com.mitchellh.ghostty.desktop"
-          "obsidian.desktop"
+          "md.obsidian.Obsidian.desktop"
           "dev.zed.Zed.desktop"
           "microsoft-edge.desktop"
         ];
