@@ -2,12 +2,13 @@
 # your system.  Help is available in the configuration.nix(5) man page
 # and in the NixOS manual (accessible by running ‘nixos-help’).
 
-{ config, pkgs, ... }:
+{ config, pkgs, inputs, ... }:
 
 {
   imports =
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
+      inputs.nix-hazkey.nixosModules.hazkey
     ];
 
   # Bootloader.
@@ -152,24 +153,23 @@
     };
   };
 
+  services.hazkey.enable = true;
+
   i18n.inputMethod = {
     enable = true;
     type = "fcitx5";
     fcitx5 = {
       waylandFrontend = true;
       ignoreUserConfig = true;
-      addons = with pkgs; [
-        fcitx5-mozc
-      ];
       settings = {
         inputMethod = {
           "Groups/0" = {
             Name = "デフォルト";
             "Default Layout" = "jp";
-            DefaultIM = "mozc";
+            DefaultIM = "hazkey";
           };
           "Groups/0/Items/0".Name = "keyboard-jp";
-          "Groups/0/Items/1".Name = "mozc";
+          "Groups/0/Items/1".Name = "hazkey";
         };
       };
     };
