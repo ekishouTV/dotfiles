@@ -4,6 +4,11 @@
       "program": "zsh"
     }
   },
+  "agent": {
+    "favorite_models": [],
+    "model_parameters": [],
+    "terminal_init_command": "copilot"
+  },
   "git_panel": {
     "tree_view": true
   },
