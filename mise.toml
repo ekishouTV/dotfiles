@@ -1,15 +1,19 @@
-[tasks]
-update-nixpkgs = {
+[tasks.update-nixpkgs]
+usage = '''
+    arg "[minimum_release_age]" default="7"
+'''
 run = '''
-    minimum_release_age=$(date -u -d '7 days ago' +%Y-%m-%dT%H:%M:%SZ)
+    minimum_release_age=$(date -u -d "${usage_minimum_release_age?} days ago" +%Y-%m-%dT%H:%M:%SZ)
     commit=$(curl -s "https://api.github.com/repos/NixOS/nixpkgs/commits?sha=nixpkgs-unstable&until=$minimum_release_age" | fx '.at(1)' '.sha')
     nix flake update nixpkgs --override-input nixpkgs github:NixOS/nixpkgs/$commit
 '''
-}
-update-home-manager = {
+
+[tasks.update-home-manager]
+usage = '''
+    arg "[minimum_release_age]" default="7"
+'''
 run = '''
-    minimum_release_age=$(date -u -d '7 days ago' +%Y-%m-%dT%H:%M:%SZ)
+    minimum_release_age=$(date -u -d "${usage_minimum_release_age?} days ago" +%Y-%m-%dT%H:%M:%SZ)
     commit=$(curl -s "https://api.github.com/repos/nix-community/home-manager/commits?sha=master&until=$minimum_release_age" | fx '.at(1)' '.sha')
     nix flake update home-manager --override-input home-manager github:nix-community/home-manager/$commit
 '''
-}
