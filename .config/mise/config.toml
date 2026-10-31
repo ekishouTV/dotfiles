@@ -1,5 +1,6 @@
 [tools]
 bat = "latest"
+copilot-cli = "latest"
 cspell = "latest"
 delta = "latest"
 dua = "latest"
