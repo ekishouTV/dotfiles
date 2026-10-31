@@ -1,4 +1,9 @@
 {
+  "terminal": {
+    "shell": {
+      "program": "zsh"
+    }
+  },
   "buffer_font_family": "UDEV Gothic 35",
   "cli_default_open_behavior": "existing_window",
   "ui_font_size": 16,
