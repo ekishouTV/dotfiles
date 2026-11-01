@@ -1,11 +1,7 @@
 { config, pkgs, inputs, ... }:
 
 {
-  targets.genericLinux.nixGL = {
-    packages = inputs.nixgl.packages;
-    defaultWrapper = "mesa";
-    installScripts = [ "mesa" ];
-  };
+  targets.genericLinux.enable = true;
 
 # TODO: Migrate an extension settings to Nix.
 #  home = {
