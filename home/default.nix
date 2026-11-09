@@ -27,6 +27,8 @@ in
       ".config/ghostty/".source = mkOutOfStoreSymlink "${dotfilesDirectory}/.config/ghostty/";
       ".config/zed/".source = mkOutOfStoreSymlink "${dotfilesDirectory}/.config/zed/";
       ".config/mise/".source = mkOutOfStoreSymlink "${dotfilesDirectory}/.config/mise/";
+      ".config/lazygit/".source = mkOutOfStoreSymlink "${dotfilesDirectory}/.config/lazygit/";
+
       ".gitconfig".source = mkOutOfStoreSymlink "${dotfilesDirectory}/.gitconfig";
       ".gitattributes".source = mkOutOfStoreSymlink "${dotfilesDirectory}/.gitattributes";
       ".config/starship.toml".source = mkOutOfStoreSymlink "${dotfilesDirectory}/.config/starship.toml";
