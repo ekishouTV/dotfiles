@@ -17,3 +17,13 @@ run = '''
     commit=$(curl -s "https://api.github.com/repos/nix-community/home-manager/commits?sha=master&until=$minimum_release_age" | fx '.at(1)' '.sha')
     nix flake update home-manager --override-input home-manager github:nix-community/home-manager/$commit
 '''
+
+[tasks.update-hazkey]
+usage = '''
+    arg "[minimum_release_age]" default="7"
+'''
+run = '''
+    minimum_release_age=$(date -u -d "${usage_minimum_release_age?} days ago" +%Y-%m-%dT%H:%M:%SZ)
+    commit=$(curl -s "https://api.github.com/repos/aster-void/nix-hazkey/commits?sha=main&until=$minimum_release_age" | fx '.at(1)' '.sha')
+    nix flake update nix-hazkey --override-input nix-hazkey github:aster-void/nix-hazkey/$commit
+'''
